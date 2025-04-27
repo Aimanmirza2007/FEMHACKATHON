@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(to left, rgb(146, 1, 146), rgb(231, 118, 137));
+  }
+  h1{
+      color: purple;
+      text-decoration: underline;
+  }
+   .container{
+      padding: 30px 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+  .leftContainer {
+    padding: 20px 20px;
+    border: 2px solid white;
+     background-color: white;
+    box-shadow: 30px 10px 25px purple;
+    width: 35vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .leftContainer input {
+    border: 2px solid purple;
+    outline: none;
+    padding-left: 15px;
+    width: 25vw;
+    height: 8vh;
+  }
+  #submit {
+    border: 1px solid white;
+    background: linear-gradient(to left, rgb(146, 1, 146), rgb(231, 118, 137));
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 35px;
+    width: 15vw;
+    height: 50px;
+    padding: 10px 10px;
+  }
+  /* RESPONSIVE */
+  @media screen and (max-width: 768px) {
+      .leftContainer{
+          width: 100%;
+      }
+      .leftContainer input {
+          width: 300px;
+          height: 50px;
+      }
+      #submit{
+          font-size: 16px;
+          width: 120px;
+          height: 40px;
+      }
+      .leftContainer{
+          height: 60vh;
+          width: 60vh;
+      }
+  }
+      
+    
